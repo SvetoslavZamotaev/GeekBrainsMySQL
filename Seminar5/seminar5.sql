@@ -61,6 +61,8 @@ CREATE TABLE orders
 
 select * 
  from orders 
+inner join analysis
+on (ord_an = an_id)
 where ord_datetime > "2020-02-05"
 ;
 
